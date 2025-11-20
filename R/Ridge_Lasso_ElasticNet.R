@@ -29,7 +29,7 @@ plot(l,res)
 plot(e,res)
 plot(m,res)
 
-#dai grafici evidenziamo sparsit‡, quindi supponiamo omosch.
+#dai grafici evidenziamo sparsit√†, quindi supponiamo omosch.
 
 #dopo aver simato i modelli di BP e White abbiamo
 #p-value=0.9179 BP accetto Ho senza log
@@ -109,7 +109,7 @@ modlogBP<-lm(resmodlog2~lk+ll+le+lm)
 summary(modlogBP)
 #p-value=0.7921 accettiamo HO
 
-#NON POSSIAMO ELIMINIARE I REGERSSORI ANCHE SE SONO STATI NON SIGNI, PERCHË CI SERVONO
+#NON POSSIAMO ELIMINIARE I REGERSSORI ANCHE SE SONO STATI NON SIGNI, PERCH√® CI SERVONO
 #NEL MODELLO DI COB DOUGLAS
 
 
@@ -310,7 +310,7 @@ coef(EN04.mod.kCV)
 cbind(coef(LASSO.mod.kCV)[,1], coef(ridge.mod.kCV)[,1],coef(EN01.mod.kCV)[,1],coef(EN02.mod.kCV)[,1],
       coef(EN03.mod.kCV)[,1], coef(EN04.mod.kCV)[,1])
 #confronto tra tutti i modelli per vedere eventuale cambio di segno dei regressori
-#solo in e con Lasso e alpha=0.1 Ë zero
+#solo in e con Lasso e alpha=0.1 √® zero
 
 
 #SCELTA modello con migliore MSE
@@ -332,7 +332,8 @@ min(cbind(mse.minLASSO,mse.minRR,mse.minEN01,mse.minEN02,mse.minEN03,mse.minEN04
 cbind((coef(EN02.mod.kCV)[,1]), coef(m1))
 
 
-#notiamo che per il regressore e c'Ë un czmbio di segno se consideriamo il modello
+#notiamo che per il regressore e c'√® un czmbio di segno se consideriamo il modello
 #che minimizza l'MSE e il modello pieno, quindi non posso interpretare come negli OLS
+
 
 
